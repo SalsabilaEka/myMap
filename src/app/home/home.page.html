@@ -1,6 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> MyMap </ion-title>
+    <ion-title>MyMap</ion-title>
+
+    <!-- Basemap and zoom buttons on the right side -->
+    <ion-buttons slot="end">
+      <div class="basemap-dropdown-container">
+        <select id="basemapDropdown" (change)="changeBasemap($event)">
+          <option value="topo-vector">Topographic</option>
+          <option value="osm">OSM</option>
+          <option value="satellite">Satellite</option>
+          <option value="oceans">Oceans</option>
+          <option value="dark-gray-vector">Dark Grey</option>
+          <option value="streets-navigation-vector">Street Navigation</option>
+          <option value="terrain">Terrain</option>
+        </select>
+      </div>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

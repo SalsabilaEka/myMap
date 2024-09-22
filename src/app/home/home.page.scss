@@ -7,20 +7,20 @@
   right: 0;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.basemap-dropdown-container {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  label {
+    margin-right: 5px;
+    font-size: 14px;
+  }
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
 }
